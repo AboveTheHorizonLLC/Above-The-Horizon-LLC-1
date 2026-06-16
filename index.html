@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Above The Horizon LLC - Premium Tree Care & Landscaping</title>
+    <!-- Tailwind CSS for sleek architecture -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Luxury Serif & Modern Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Animate.css for premium layout movements -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #ffffff;
+            color: #1a1a1a;
+            scroll-behavior: smooth;
+        }
+        .font-luxury {
+            font-family: 'Cinzel', serif;
+        }
+        .bg-crimson {
+            background-color: #8B0000;
+        }
+        .text-crimson {
+            color: #8B0000;
+        }
+        .border-crimson {
+            borderColor: #8B0000;
+        }
+        /* Custom smooth luxury animations */
+        .hover-lift {
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .hover-lift:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(139, 0, 0, 0.08);
+        }
+        .hero-overlay {
+            background: linear-gradient(180deg, rgba(26,26,26,0.6) 0%, rgba(26,26,26,0.85) 100%);
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center h-full py-2">
+                <img src="https://abovethehorizonllc.com/wp-content/uploads/elementor/thumbs/Above_the_Horizon_LLC_Back-removebg-preview-e1775773772804-rm28lxbqtux3e78m2jgcull562l7sy8gdldenl3qys.png" 
+                     alt="Above The Horizon LLC Logo" 
+                     class="h-16 w-auto object-contain animate__animated animate__fadeIn">
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex space-x-10">
+                <a href="#about" class="text-sm font-medium tracking-widest text-gray-800 hover:text-crimson transition-colors duration-300 uppercase">About</a>
+                <a href="#services" class="text-sm font-medium tracking-widest text-gray-800 hover:text-crimson transition-colors duration-300 uppercase">Services</a>
+                <a href="#reviews" class="text-sm font-medium tracking-widest text-gray-800 hover:text-crimson transition-colors duration-300 uppercase">Reviews</a>
+                <a href="#contact" class="text-sm font-medium tracking-widest text-gray-800 hover:text-crimson transition-colors duration-300 uppercase">Contact</a>
+            </nav>
+
+            <!-- Call to Action -->
+            <div class="hidden lg:flex items-center space-x-6">
+                <a href="tel:2243550437" class="text-sm font-semibold text-gray-900 tracking-wider hover:text-crimson transition-colors">(224) 355-0437</a>
+                <a href="#contact" class="bg-crimson text-white text-xs font-semibold tracking-widest px-6 py-3.5 uppercase border border-crimson hover:bg-white hover:text-crimson transition-all duration-300">
+                    Get A Quote
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('https://spilservis.ru/wp-content/uploads/2025/06/our-works-banner.png');">
+        <div class="absolute inset-0 hero-overlay"></div>
+        <div class="relative z-10 max-w-5xl mx-auto px-6 text-center text-white">
+            <span class="text-xs font-bold tracking-[0.4em] text-white/80 uppercase block mb-4 animate__animated animate__fadeInDown">
+                Welcome to Above The Horizon LLC
+            </span>
+            <h1 class="font-luxury text-4xl sm:text-6xl md:text-7xl font-light tracking-wide leading-tight mb-8 animate__animated animate__fadeInUp">
+                Elevate Your Landscape <br><span class="font-bold text-white">Above The Horizon</span>
+            </h1>
+            <p class="max-w-2xl mx-auto text-base sm:text-lg text-gray-200 font-light tracking-wide leading-relaxed mb-10 animate__animated animate__fadeInUp animate__delay-1s">
+                Specializing in expert tree trimming, removal, and high-end landscape enhancement services. Available 24/7 to keep your property flawless and secure.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 animate__animated animate__fadeInUp animate__delay-1s">
+                <a href="#contact" class="w-full sm:w-auto bg-crimson text-white text-xs font-semibold tracking-widest px-8 py-4 uppercase border border-transparent hover:bg-transparent hover:border-white transition-all duration-300">
+                    Book An Appointment
+                </a>
+                <a href="#about" class="w-full sm:w-auto bg-transparent text-white text-xs font-semibold tracking-widest px-8 py-4 uppercase border border-white/40 hover:bg-white hover:text-gray-900 transition-all duration-300">
+                    Discover More
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-24 md:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                
+                <!-- Imagery Layout -->
+                <div class="relative group overflow-hidden border border-gray-100">
+                    <img src="https://www.gotreequotes.com/wp-content/uploads/2021/03/What-is-a-level-5-arborist.jpg" 
+                         alt="About Our Premium Tree Care Services" 
+                         class="w-full h-[550px] object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute inset-0 border-[16px] border-white/10 pointer-events-none"></div>
+                </div>
+
+                <!-- Textual Content -->
+                <div class="space-y-8">
+                    <div class="space-y-3">
+                        <span class="text-xs font-bold tracking-[0.3em] text-crimson uppercase block">Premium Standards</span>
+                        <h2 class="font-luxury text-3xl md:text-5xl font-bold tracking-tight text-gray-900">About Ethan Roffman</h2>
+                        <div class="h-0.5 w-16 bg-crimson mt-4"></div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed font-light text-base md:text-lg">
+                        Ethan Roffman is a trusted tree care specialist serving Sheboygan, WI, with years of hands-on experience in maintaining and improving outdoor spaces. He specializes in tree trimming and removal, along with services such as tree and shrub treatment, mulching, planting, minor landscaping, and wildlife habitat enhancement.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed font-light text-base md:text-lg">
+                        Known for his reliability and attention to detail, Ethan is committed to delivering safe, high-quality results while promoting the long-term health and beauty of every property he works on.
+                    </p>
+                    <div class="border-l-4 border-crimson pl-6 py-2 my-6">
+                        <p class="italic text-gray-700 font-medium">
+                            “Our mission is to provide dependable, professional tree care and landscaping services that enhance the safety, beauty, and value of our clients' properties, while supporting a healthy and sustainable environment.”
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="py-24 md:py-32 bg-gray-50 border-t border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-2xl mx-auto mb-20 space-y-3">
+                <span class="text-xs font-bold tracking-[0.3em] text-crimson uppercase block">What We Do</span>
+                <h2 class="font-luxury text-3xl md:text-5xl font-bold tracking-tight text-gray-900">Architectural Tree Solutions</h2>
+                <div class="h-0.5 w-16 bg-crimson mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="bg-white border border-gray-100 overflow-hidden hover-lift flex flex-col h-full">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://avatars.mds.yandex.net/get-ydo/10236117/2a0000019d3fbe17b1c33a48536e9703f835/diploma" 
+                             alt="Tree Trimming Services" 
+                             class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-luxury text-xl font-bold text-gray-900 mb-3 tracking-wide">Tree Trimming</h3>
+                            <p class="text-gray-600 font-light text-sm leading-relaxed mb-6">
+                                Enhance the health, safety, and appearance of your trees with precise and professional trimming solutions custom tailored to your landscape architecture.
+                            </p>
+                        </div>
+                        <a href="#contact" class="text-xs font-bold tracking-widest text-crimson uppercase inline-flex items-center group">
+                            Inquire Now <span class="ml-2 transform transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white border border-gray-100 overflow-hidden hover-lift flex flex-col h-full">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://t3.ftcdn.net/jpg/04/57/89/20/360_F_457892036_7uWV3kGeDXXUxCbTbTC9fQJIBkWuyj8e.jpg" 
+                             alt="Tree Removal Services" 
+                             class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-luxury text-xl font-bold text-gray-900 mb-3 tracking-wide">Tree Removal</h3>
+                            <p class="text-gray-600 font-light text-sm leading-relaxed mb-6">
+                                Safe and highly efficient removal of hazardous, structurally compromised, dead, or unwanted trees from your residential or commercial property grounds.
+                            </p>
+                        </div>
+                        <a href="#contact" class="text-xs font-bold tracking-widest text-crimson uppercase inline-flex items-center group">
+                            Inquire Now <span class="ml-2 transform transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white border border-gray-100 overflow-hidden hover-lift flex flex-col h-full">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://avatars.mds.yandex.net/i?id=77ea0d15c6586e3b7684e8103f2f801d672cda1e-5192545-images-thumbs&n=13" 
+                             alt="Tree and Shrub Treatment" 
+                             class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-luxury text-xl font-bold text-gray-900 mb-3 tracking-wide">Tree & Shrub Treatment</h3>
+                            <p class="text-gray-600 font-light text-sm leading-relaxed mb-6">
+                                Protect and nourish your vital plants with advanced, expert scientific treatments designed to counter pests, handle diseases, and ensure continuous health.
+                            </p>
+                        </div>
+                        <a href="#contact" class="text-xs font-bold tracking-widest text-crimson uppercase inline-flex items-center group">
+                            Inquire Now <span class="ml-2 transform transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS SECTION -->
+    <section id="reviews" class="py-24 md:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-2xl mx-auto mb-20 space-y-3">
+                <span class="text-xs font-bold tracking-[0.3em] text-crimson uppercase block">Testimonials</span>
+                <h2 class="font-luxury text-3xl md:text-5xl font-bold tracking-tight text-gray-900">What Our Clients Say</h2>
+                <div class="h-0.5 w-16 bg-crimson mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="border border-gray-100 p-8 bg-gray-50 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-crimson space-x-1">
+                            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                        </div>
+                        <p class="text-gray-600 font-light text-sm leading-relaxed italic">
+                            "Professional tree service done perfectly. The team is extremely efficient, highly skilled, and leaves the landscape looking immaculate."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-gray-200">
+                        <h4 class="font-semibold text-gray-900 text-sm tracking-wide">Residential Client</h4>
+                        <span class="text-xs text-gray-400">Sheboygan, WI</span>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="border border-gray-100 p-8 bg-gray-50 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-crimson space-x-1">
+                            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                        </div>
+                        <p class="text-gray-600 font-light text-sm leading-relaxed italic">
+                            "Fast and dependable service options. They handled a difficult tree removal near our structures safely without any issue. Absolute quality work you can trust."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-gray-200">
+                        <h4 class="font-semibold text-gray-900 text-sm tracking-wide">Property Owner</h4>
+                        <span class="text-xs text-gray-400">Wisconsin Resident</span>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="border border-gray-100 p-8 bg-gray-50 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-crimson space-x-1">
+                            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                        </div>
+                        <p class="text-gray-600 font-light text-sm leading-relaxed italic">
+                            "Beautiful landscapes, built to last. Ethan has meticulous attention to detail and treats your property with the absolute highest level of respect."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-gray-200">
+                        <h4 class="font-semibold text-gray-900 text-sm tracking-wide">Local Homeowner</h4>
+                        <span class="text-xs text-gray-400">Sheboygan, WI</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-24 md:py-32 bg-gray-50 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                
+                <!-- Contact Meta Info -->
+                <div class="space-y-8">
+                    <div class="space-y-3">
+                        <span class="text-xs font-bold tracking-[0.3em] text-crimson uppercase block">Get In Touch</span>
+                        <h2 class="font-luxury text-3xl md:text-5xl font-bold tracking-tight text-gray-900">Start Your Landscape Legacy Today</h2>
+                        <div class="h-0.5 w-16 bg-crimson mt-4"></div>
+                    </div>
+                    <p class="text-gray-600 font-light max-w-md leading-relaxed">
+                        Ready to elevate your outdoor space? Connect directly for priority scheduling, emergency 24/7 care, or to schedule an on-site property consultation.
+                    </p>
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-center space-x-4">
+                            <span class="text-xs font-bold uppercase tracking-widest text-crimson w-20">Call:</span>
+                            <a href="tel:2243550437" class="text-gray-900 font-medium hover:text-crimson transition-colors">(224) 355-0437</a>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <span class="text-xs font-bold uppercase tracking-widest text-crimson w-20">Email:</span>
+                            <a href="mailto:elroff77@gmail.com" class="text-gray-900 font-medium hover:text-crimson transition-colors">elroff77@gmail.com</a>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <span class="text-xs font-bold uppercase tracking-widest text-crimson w-20">Locate:</span>
+                            <span class="text-gray-900 font-medium">Sheboygan, WI 53081</span>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <span class="text-xs font-bold uppercase tracking-widest text-crimson w-20">Hours:</span>
+                            <span class="text-gray-900 font-medium text-sm px-2.5 py-1 bg-crimson/10 text-crimson inline-block font-semibold">Available 24/7</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Premium Form Interface -->
+                <div class="bg-white border border-gray-100 p-10 shadow-sm">
+                    <form onsubmit="event.preventDefault();" class="space-y-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-2">Your Name</label>
+                                <input type="text" class="w-full bg-gray-50 border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:border-crimson transition-colors" placeholder="John Doe font-light">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-2">Phone Number</label>
+                                <input type="tel" class="w-full bg-gray-50 border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:border-crimson transition-colors" placeholder="(555) 555-5555">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-2">Email Address</label>
+                            <input type="email" class="w-full bg-gray-50 border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:border-crimson transition-colors" placeholder="johndoe@example.com">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-2">Message & Service Requirements</label>
+                            <textarea rows="4" class="w-full bg-gray-50 border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:border-crimson transition-colors" placeholder="Describe your structural layout or landscape tree trimming needs..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-crimson text-white text-xs font-bold tracking-widest py-4 uppercase border border-crimson hover:bg-white hover:text-crimson transition-all duration-300">
+                            Submit Request
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION WITH EMBEDDED GOOGLE MAPS NAVIGATION -->
+    <footer class="bg-gray-900 text-white pt-20 pb-10 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16 items-start">
+                
+                <!-- Footer Identity Info -->
+                <div class="space-y-6">
+                    <img src="https://abovethehorizonllc.com/wp-content/uploads/elementor/thumbs/Above_the_Horizon_LLC_Back-removebg-preview-e1775773772804-rm28lxbqtux3e78m2jgcull562l7sy8gdldenl3qys.png" 
+                         alt="Above The Horizon LLC Footer Logo" 
+                         class="h-16 w-auto object-contain brightness-0 invert">
+                    <p class="text-gray-400 font-light text-sm leading-relaxed max-w-sm">
+                        Above The Horizon LLC – Your highly trusted luxury partner for expert residential tree care, meticulous structural removals, and premium landscaping services.
+                    </p>
+                </div>
+
+                <!-- Footer Architectural Navigations -->
+                <div class="space-y-4">
+                    <h4 class="font-luxury text-sm font-semibold uppercase tracking-widest text-white">Navigation</h4>
+                    <ul class="space-y-2.5 text-sm text-gray-400 font-light">
+                        <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Our Luxury Services</a></li>
+                        <li><a href="#reviews" class="hover:text-white transition-colors">Client Reviews</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors">Book Consultation</a></li>
+                    </ul>
+                </div>
+
+                <!-- GMB Verification Navigation Footer Element -->
+                <div class="space-y-4">
+                    <h4 class="font-luxury text-sm font-semibold uppercase tracking-widest text-white">Our GMB Navigation Location</h4>
+                    <div class="w-full overflow-hidden border border-gray-800 rounded shadow-md">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d92263.24334889224!2d-87.8478306!3d43.7266244!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4139322a294fe2e3%3A0xc7a57237af12af4a!2sAbove%20The%20Horizon%20LLC!5e0!3m2!1sen!2s!4v1781641139770!5m2!1sen!2s" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Credits Copyright Section Layout Element -->
+            <div class="pt-8 border-t border-gray-800 text-center text-xs text-gray-500 font-light tracking-wide flex flex-col sm:flex-row justify-between items-center gap-4">
+                <p>&copy; 2026 Above The Horizon LLC. All Rights Reserved.</p>
+                <p class="tracking-widest uppercase">Luxury Web 2.0 Deployment via GitHub</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
